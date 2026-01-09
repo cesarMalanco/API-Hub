@@ -10,8 +10,6 @@
 
 **A multi-API desktop application integrating NASA, Pokémon, X (Twitter), and Chuck Norris APIs**
 
-[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [APIs Used](#-apis-used) • [Usage](#-usage)
-
 </div>
 
 ---
@@ -118,7 +116,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/api-hub.git
+git clone https://github.com/cesarMalanco/API-Hub.git
 
 # Navigate to project directory
 cd api-hub
