@@ -1,11 +1,16 @@
-# Celia Fernanda Vela Uribe
-# Cesar Andres Zuleta Malanco
+# Author: cesarMalanco
 
 # ------------ LIBRARIES ------------
 # Libraries for sending HTTP requests
 import requests
 from urllib.request import urlopen
 from requests.exceptions import HTTPError
+# Library for loading environment variables
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 # Library for handling image data
 from PIL import Image, ImageTk
 # Library for creating a GUI interface
@@ -23,12 +28,12 @@ chuckN_url = "https://api.chucknorris.io/jokes/random"
 # -----------------------------------
 
 # ------------- API KEYS ------------
-nasa_key = "RjeNVFxhx2TnbLN8OZcqdQ17LBMqRxGtSyacFM4s"
-consumerX_key='JHnRw8Auqu4SNUsIQ1EpzshR6'
-consumerX_secret='kmYE6ZgPBikmMZtaBzsNsF83Xqk4TFHHAvvEh0fwRy8zkrmQ5t'
-bearerX_token='AAAAAAAAAAAAAAAAAAAAAEoTzgEAAAAAbhrYoe0TlP1GFC0dsBP1KThJvoc%3DyAanX3UCYEpIQyTrKzLpFZDdbgxikC7YEc18uKvg0bkkTuQpTs' 
-accessX_token='1893874559163527168-sajhzV0mFSkaZQWOC8MxI9Lh33wx8F'
-accessX_token_secret='nqdLvVaTUBLLzGVkbQwmAoK5MA2xM1YBfAmiry6KdYjyY'
+nasa_key = os.getenv("NASA_API_KEY")
+consumerX_key = os.getenv("X_CONSUMER_KEY")
+consumerX_secret = os.getenv("X_CONSUMER_SECRET")
+bearerX_token = os.getenv("X_BEARER_TOKEN")
+accessX_token = os.getenv("X_ACCESS_TOKEN")
+accessX_token_secret = os.getenv("X_ACCESS_TOKEN_SECRET")
 # -----------------------------------
 
 # ---------- GUI FUNCTIONS ----------
@@ -63,13 +68,16 @@ def get_astronomyPic(date):
 
     # GET (request data from the server)
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=10)  # 10 second timeout
         response.raise_for_status()  # Will raise an exception for HTTP errors
+    except requests.exceptions.Timeout:
+        msgbox.showerror("Error", "Request timed out. Try again.")
+        return None
     except requests.exceptions.HTTPError as errh:
         msgbox.showerror("Error", f"HTTP Error: {errh}")
         return None
     except requests.exceptions.RequestException as e:
-        msgbox.showerror("Error", "Error")
+        msgbox.showerror("Error", f"Connection error: {e}")
         return None
     
     if response.status_code == 200:
@@ -108,7 +116,11 @@ def show_astronomyPic_data():
         url_image = astronomyPic_info['url']
         if url_image and url_image.lower().endswith(('.png', '.jpg', '.jpeg')):
             try:
-                image = Image.open(urlopen(url_image))
+                # Use requests with timeout instead of urlopen
+                img_response = requests.get(url_image, timeout=15, stream=True)
+                img_response.raise_for_status()
+                from io import BytesIO
+                image = Image.open(BytesIO(img_response.content))
                 new_size = (300, 300)
                 image = image.resize(new_size)  # Resize to fit the window
                 photo = ImageTk.PhotoImage(image)
