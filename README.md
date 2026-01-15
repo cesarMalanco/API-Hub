@@ -91,9 +91,9 @@
 
 ### API Endpoints
 
-|             NASA APOD              |               Pokédex               |
-| :--------------------------------: | :---------------------------------: |
-| ![NASA](screenshots/nasa_apod.png) | ![Pokemon](screenshots/pokedex.png) |
+|               NASA APOD                |               Pokédex               |
+| :------------------------------------: | :---------------------------------: |
+| ![NASA](screenshots/nasa_apod.png?v=2) | ![Pokemon](screenshots/pokedex.png) |
 
 |             X (Twitter) Bot             |           Chuck Norris Jokes           |
 | :-------------------------------------: | :------------------------------------: |
