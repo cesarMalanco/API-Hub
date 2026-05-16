@@ -170,6 +170,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<sub>Built with ☕︎ using Python and Tkinter</sub>
+<sub>Built with ☕ using Python and Tkinter</sub>
 
 </div>
