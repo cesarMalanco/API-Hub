@@ -1,8 +1,8 @@
 <div align="center">
 
 # 🌐 API Hub
-
 </div>
+---
 
 ## >_ About The Project
 
