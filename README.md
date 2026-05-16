@@ -11,14 +11,6 @@
 
 **API Hub** is a desktop application that demonstrates the integration of multiple public APIs in a single, user-friendly interface. Built with Python and Tkinter, it showcases both GET and POST HTTP request methods.
 
-### Why API Hub?
-
-- 🚀 **Multiple APIs** in one unified interface
-- 🖼️ **Visual content** display with images
-- 🐦 **Social media integration** with X (Twitter)
-- 🎮 **Interactive experience** with Pokémon data
-- 🔒 **Secure configuration** with environment variables
-
 ---
 
 ## ✨ Features
