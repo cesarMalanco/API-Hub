@@ -247,7 +247,7 @@ def post_tweet(text):
         msgbox.showerror("Error", f"Error uploading tweet: {e}")
 
 def open_profile():
-    webbrowser.open("https://nitter.net/smartfoxbot")
+    webbrowser.open("HERE LINK TO YOUR TWITTER PROFILE")
 
 def reset_fields3():
     textbox_Tweet.delete("1.0", tk.END)
