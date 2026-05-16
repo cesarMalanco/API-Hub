@@ -65,7 +65,7 @@
 
 ---
 
-## 📸 Demo
+## >_ Demo
 
 <div align="center">
 
