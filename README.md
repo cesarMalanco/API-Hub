@@ -89,42 +89,6 @@
 
 ---
 
-## >_ Installation
-
-### Prerequisites
-
-| Requirement | Version | Download                                      |
-| ----------- | ------- | --------------------------------------------- |
-| Python      | 3.8+    | [Download](https://www.python.org/downloads/) |
-| pip         | Latest  | Included with Python                          |
-
-### Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/cesarMalanco/API-Hub.git
-
-# Navigate to project directory
-cd api-hub
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure environment variables
-# Copy .env.example to .env and add your API keys
-
-# Run the application
-python API_Hub.py
-```
-
-### Dependencies
-
-```bash
-pip install requests pillow tweepy python-dotenv
-```
-
----
-
 ## >_ Environment Setup
 
 Create a `.env` file in the root directory:
@@ -167,24 +131,6 @@ X_ACCESS_TOKEN_SECRET=your_access_token_secret
 
 ---
 
-## >_ Usage
-
-### Running the Application
-
-```bash
-python API_Hub.py
-```
-
-### Navigation
-
-1. **Main Menu** - Select an API endpoint
-2. **NASA APOD** - Enter date (YYYY-MM-DD format) and search
-3. **Pokédex** - Enter Pokémon name and search
-4. **X Bot** - Write your tweet and submit
-5. **Chuck Norris** - Click generate for a random joke
-
----
-
 ## >_ Project Structure
 
 ```
@@ -204,17 +150,6 @@ api-hub/
     ├── pokedex.png
     ├── twitter_bot.png
     └── chuck_norris.png
-```
-
----
-
-## >_ Requirements
-
-```txt
-requests>=2.28.0
-Pillow>=9.0.0
-tweepy>=4.14.0
-python-dotenv>=1.0.0
 ```
 
 ---
