@@ -29,7 +29,7 @@
 </td>
 <td width="50%">
 
-### 🎮 Pokédex
+### >_ Pokédex
 
 - Search any Pokémon by name
 - View official artwork
@@ -41,7 +41,7 @@
 <tr>
 <td width="50%">
 
-### 🐦 X (Twitter) Bot
+### >_ X (Twitter) Bot
 
 - Post tweets directly from the app
 - Character limit validation (280 chars)
@@ -51,7 +51,7 @@
 </td>
 <td width="50%">
 
-### 😂 Chuck Norris Jokes
+### >_ Chuck Norris Jokes
 
 - Random joke generator
 - Instant joke display
@@ -88,7 +88,7 @@
 
 ---
 
-## 🚀 Installation
+## >_ Installation
 
 ### Prerequisites
 
@@ -124,7 +124,7 @@ pip install requests pillow tweepy python-dotenv
 
 ---
 
-## 🔑 Environment Setup
+## >_ Environment Setup
 
 Create a `.env` file in the root directory:
 
@@ -151,7 +151,7 @@ X_ACCESS_TOKEN_SECRET=your_access_token_secret
 
 ---
 
-## 🌐 APIs Used
+## >_ APIs Used
 
 <div align="center">
 
@@ -166,7 +166,7 @@ X_ACCESS_TOKEN_SECRET=your_access_token_secret
 
 ---
 
-## 💻 Usage
+## >_ Usage
 
 ### Running the Application
 
@@ -184,7 +184,7 @@ python API_Hub.py
 
 ---
 
-## 📁 Project Structure
+## >_ Project Structure
 
 ```
 api-hub/
@@ -207,7 +207,7 @@ api-hub/
 
 ---
 
-## 📦 Requirements
+## >_ Requirements
 
 ```txt
 requests>=2.28.0
@@ -218,13 +218,13 @@ python-dotenv>=1.0.0
 
 ---
 
-## 📝 License
+## >_ License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👤 Author
+## >_ Author
 
 <div align="center">
 
