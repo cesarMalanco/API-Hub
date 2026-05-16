@@ -29,7 +29,7 @@
 </td>
 <td width="50%">
 
-### >_ Pokédex
+### 🐦‍🔥 Pokédex
 
 - Search any Pokémon by name
 - View official artwork
@@ -41,7 +41,7 @@
 <tr>
 <td width="50%">
 
-### >_ X (Twitter) Bot
+### 🐦 X (Twitter) Bot
 
 - Post tweets directly from the app
 - Character limit validation (280 chars)
@@ -51,7 +51,7 @@
 </td>
 <td width="50%">
 
-### >_ Chuck Norris Jokes
+### 🤠 Chuck Norris Jokes
 
 - Random joke generator
 - Instant joke display
