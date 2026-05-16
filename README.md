@@ -1,11 +1,6 @@
 <div align="center">
 
 # 🌐 API Hub
-**A multi-API desktop application integrating NASA, Pokémon, X (Twitter), and Chuck Norris APIs**
-
-</div>
-
----
 
 ## >_ About The Project
 
