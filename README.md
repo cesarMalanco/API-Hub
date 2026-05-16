@@ -1,13 +1,6 @@
 <div align="center">
 
 # 🌐 API Hub
-
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Tkinter](https://img.shields.io/badge/Tkinter-GUI-blue?style=for-the-badge&logo=python&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
-[![NASA API](https://img.shields.io/badge/NASA-API-E03C31?style=for-the-badge&logo=nasa&logoColor=white)](https://api.nasa.gov/)
-[![Twitter API](https://img.shields.io/badge/X-API-000000?style=for-the-badge&logo=x&logoColor=white)](https://developer.twitter.com/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-
 **A multi-API desktop application integrating NASA, Pokémon, X (Twitter), and Chuck Norris APIs**
 
 </div>
